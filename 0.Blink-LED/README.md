@@ -15,6 +15,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 2. Save the project
 
 3. Make changes in main.c file. Use HAL library fuctions.
+![HAL_Function_LED_Blink](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/0.Blink-LED/Images/101.png)
 
         //CODE FOR LED BLINK
         HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); 
