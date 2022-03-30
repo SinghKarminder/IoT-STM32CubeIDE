@@ -18,8 +18,8 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 ![HAL_Function_LED_Blink](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/0.Blink-LED/Images/101.png)
 
         //CODE FOR LED BLINK
-        HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); 
-        HAL_Delay (500);
+        HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); /*Toggle Pin PA5 for LED2*/ 
+        HAL_Delay (500);/*Add some delay*/
 
 4. Complete code given in directory Core>Src>main.c
 
