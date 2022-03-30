@@ -1,4 +1,4 @@
-#Blink LED Project on NUCLEO-L476RG Development Kit through STM32CubeIDE
+# Blink LED Project on NUCLEO-L476RG Development Kit through STM32CubeIDE
 
 The project demonstrates how to use the STM32CubeIDE tool to configure peripherals, develop,and produce your beginning projects using initialization C code and HAL libraries using the STM32CubeIDE tool.
 
@@ -8,7 +8,7 @@ Or https://www.st.com/en/development-tools/stm32cubeide.html
 The official documentation regarding STM32CubeIDE is:  
 https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-stmicroelectronics.pdf
 
-##Tips for Running
+## Tips for Running
 
 1. Configure NUCLEO-L476RG Board as in folder LED_Blinky.ioc
 
@@ -16,9 +16,9 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
 3. Make changes in main.c file. Use HAL library fuctions.
 
-          //CODE FOR LED BLINK
-	  HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); 
-	  HAL_Delay (500);//   
+        //CODE FOR LED BLINK
+        HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); 
+        HAL_Delay (500);
 
 4. Complete code given in Core>Src>main.c
 
