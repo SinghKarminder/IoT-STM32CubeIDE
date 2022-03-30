@@ -17,8 +17,8 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 3. Make changes in main.c file. Use HAL library fuctions.
 
           //CODE FOR LED BLINK
-	  HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); //Toggle Pin PA5 to blink LED2
-	  HAL_Delay (500);   /* Insert delay 500 ms */
+	  //HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); //Toggle Pin PA5 to blink LED2
+	  //HAL_Delay (500);   /* Insert delay 500 ms */
 
 4. Complete code given in Core>Src>main.c
 
