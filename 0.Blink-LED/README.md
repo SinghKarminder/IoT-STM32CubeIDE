@@ -21,7 +21,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
         HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); 
         HAL_Delay (500);
 
-4. Complete code given in Core>Src>main.c
+4. Complete code given in directory Core>Src>main.c
 
 5. Save the project and Debug the project
 
