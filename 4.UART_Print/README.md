@@ -18,9 +18,13 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 ![HAL_Function_LED_Blink](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/0.Blink-LED/Images/101.png)
 
         //CODE FOR LED BLINK
-        HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); /*Toggle Pin PA5 for LED2*/ 
-        HAL_Delay (500);/*Add some delay*/
-
+        while (1)
+        {
+        //User code for printing message to UART terminal
+        strcpy((char*)buf, "Hello World!\r\n");
+        HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
+        HAL_Delay(500);
+        /* USER CODE END WHILE */
 4. Complete code given in directory Core>Src>main.c
 
 5. Save the project and Debug the project
