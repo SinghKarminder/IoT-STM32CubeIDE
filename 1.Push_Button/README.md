@@ -19,10 +19,10 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
         //CODE FOR PUSH BUTTON
        if(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13)==GPIO_PIN_RESET) //Reading Input Button PA13
-	  {
-		  HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5); //Toggle LED when input is reset
-		  HAL_Delay(300); // Add some delay
-	  }
+        {
+        HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5); //Toggle LED when input is reset
+        HAL_Delay(300); // Add some delay
+	}
 
 4. Complete code given in directory Core>Src>main.c
 
