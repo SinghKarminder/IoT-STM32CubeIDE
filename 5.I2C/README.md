@@ -1,4 +1,4 @@
-# Blink LED Project on NUCLEO-L476RG Development Kit through STM32CubeIDE
+# I2C Measurement of temperature Project on NUCLEO-L476RG Development Kit through STM32CubeIDE using STTS751 Sensor
 
 The project demonstrates how to use the STM32CubeIDE tool to configure peripherals, develop,and produce your beginning projects using initialization C code and HAL libraries using the STM32CubeIDE tool.
 
