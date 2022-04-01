@@ -1,4 +1,4 @@
-# Blink LED Project on NUCLEO-L476RG Development Kit through STM32CubeIDE
+# On/Off LED Project using Push Button on NUCLEO-L476RG Development Kit through STM32CubeIDE
 
 There are two push buttons in NUCLEO-L476RG one is User (PA13) and other is Reset. In NUCLEO-L476RG Push Button will be connected to ground when it is pressed. When the push Button is pressed it will be in the Reset state. Thus, in the project we will toggle the LED when the push button is pressed.
 
@@ -16,6 +16,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
 3. Make changes in main.c file. Use HAL library fuctions.
 ![HAL_Function_LED_Blink](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/0.Blink-LED/Images/101.png)
+![Push_Button_Algorithm](
 
         //CODE FOR PUSH BUTTON
        if(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13)==GPIO_PIN_RESET) //Reading Input Button PA13
@@ -32,5 +33,5 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
 7. Output: LED2 will be toggled when button PA13 will be pressed
 
-Refer video: https://www.youtube.com/watch?v=hyZS2p1tW-g
+
  
