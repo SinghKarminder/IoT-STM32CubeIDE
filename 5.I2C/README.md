@@ -13,6 +13,7 @@ Or https://www.st.com/en/development-tools/stm32cubeide.html
 The official documentation regarding STM32CubeIDE is:  
 https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-stmicroelectronics.pdf
 
+
 ## Tips for Running
 
 1. Configure NUCLEO-L476RG Board as in folder I2C.ioc
