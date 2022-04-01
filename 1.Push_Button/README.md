@@ -1,6 +1,6 @@
 # Blink LED Project on NUCLEO-L476RG Development Kit through STM32CubeIDE
 
-The project demonstrates how to use the STM32CubeIDE tool to configure peripherals, develop,and produce your beginning projects using initialization C code and HAL libraries using the STM32CubeIDE tool.
+There are two push buttons in NUCLEO-L476RG one is User (PA13) and other is Reset. In NUCLEO-L476RG Push Button will be connected to ground when it is pressed. When the push Button is pressed it will be in the Reset state. Thus, in the project we will toggle the LED when the push button is pressed.
 
 The latest version of the STM32CubeIDE installer can be downloaded from the STMicroelectronics website at www.st.com.
 Or https://www.st.com/en/development-tools/stm32cubeide.html
@@ -10,7 +10,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
 ## Tips for Running
 
-1. Configure NUCLEO-L476RG Board as in folder LED_Blinky.ioc
+1. Configure NUCLEO-L476RG Board as in folder Push_Button.ioc
 
 2. Save the project
 
