@@ -1,8 +1,19 @@
-# Print Execution timer of timer Project on serial terminal on NUCLEO-L476RG Development Kit through STM32CubeIDE
+# Blink LED through Timer 16 Project on NUCLEO-L476RG Development Kit through STM32CubeIDE
 
-In this demo, we will be using an STM32 Nucleo-L476RG, which has a default main clock (HCLK) of 80 MHz. We could have a timer tick at 80 MHz, but that might be too fast for many of our applications. A 16-bit timer can count to 65,535 before rolling over, which means we can measure events no longer than about 819 microseconds.
-If we wish to measure longer events, we need to use a prescaler, which is a piece of hardware that divides the clock source. For example, a prescaler of 80 would turn an 80 MHz clock into a 1 MHz clock.
-Now, our timer would tick once every 1 microsecond and, assuming a 16-bit timer, be able to time events up to a maximum of about 65.5 milliseconds.
+A timer (sometimes known as a counter) is a unique piece of hardware found in many microcontrollers. Their purpose is straightforward: they count (up or down, depending on the configuration—for now, we'll assume up). An 8-bit timer, for example, will count from 0 to 255. When a timer reaches its maximum value, most of them will "rollover." As a result, once our 8-bit timer hits 255, it will reset to 0.
+Most timers include a range of options that you may use to customize how they work. Other specific function registers in the microcontroller are frequently used to apply these adjustments. You might, for example, set the timer to roll over at 100 instead of counting to the maximum of 255. You may also use the timer to control other hardware or peripherals inside the microcontroller, such as activating a certain pin when the timer rolls over.
+
+Calculation:
+
+![equation](http://latex.codecogs.com/gif.latex?ToggleDelay%3D%5Cfrac%7BTimerCount*Prescaler%7D%7BMCUClock%7D)
+
+Timer Count=10,000
+Prescaler=8,000
+MCU Clock=80MHz
+
+![equation](http://latex.codecogs.com/gif.latex?ToggleDelay%3D%5Cfrac%7B10,000*8,000%7D%7B80*10^6%7D)
+
+Toggle Delay = 1 sec
 
 The latest version of the STM32CubeIDE installer can be downloaded from the STMicroelectronics website at www.st.com.
 Or https://www.st.com/en/development-tools/stm32cubeide.html
@@ -22,8 +33,6 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
         //CODE FOR PRINTING ELASPED TIME
         
         /* USER CODE BEGIN 1 */
-        char uart_buf[50];
-        int uart_buf_len;
         uint16_t timer_val;        
         /* USER CODE END 1 
         
@@ -33,33 +42,20 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
         HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
         
         // Start timer
-        HAL_TIM_Base_Start(&htim16);
-        /* USER CODE END 2 */
+        HAL_TIM_Base_Start(&htim16);       
+        
+       // Get current time (microseconds)
+       timer_val = __HAL_TIM_GET_COUNTER(&htim16);
+       /* USER CODE END 2 */
         
         while (1)
         {
-        //Defining variables size and type
-        char uart_buf[50];
-        int uart_buf_len;
-        uint16_t timer_val;
-        
-        // Get current time (microseconds)
+        // If enough time has passed (1 second), toggle LED and get new timestamp
+        if (__HAL_TIM_GET_COUNTER(&htim16) - timer_val >= 10000)
+        {
+        HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
         timer_val = __HAL_TIM_GET_COUNTER(&htim16);
-        
-        // Wait for 50 ms
-        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-        HAL_Delay(50);
-        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-        
-        // Get time elapsed
-        timer_val = __HAL_TIM_GET_COUNTER(&htim16) - timer_val;
-        
-        // Show elapsed time
-        uart_buf_len = sprintf(uart_buf, "%u us\r\n", timer_val);
-        HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
-        
-        // Wait again so we don't flood the Serial terminal
-        HAL_Delay(1000);
+        }
         /* USER CODE END WHILE */
 
         
@@ -69,7 +65,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
 6. Run the project
 
-7. Output: Elasped time being printed on the serial terminal
+7. Output: LED will blink when the timer roll over i.e. after 1 second
 
 Refer video: https://www.youtube.com/watch?v=VfbW6nfG4kw
  
