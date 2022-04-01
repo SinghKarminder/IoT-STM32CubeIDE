@@ -3,7 +3,7 @@
 The project demonstrates how to use the STM32CubeIDE tool to configure peripherals, develop,and produce your beginning projects using initialization C code and HAL libraries using the STM32CubeIDE tool tto measure temperature from STTS751 Sensor.
 Inter-Integrated Circuit (I2C) is a communication bus protocol developed by Philips Semiconductor (now NXP Semiconductors) in 1982. It is a relatively slow protocol but has seen widespread use due to its simplicity and robustness. Most microcontrollers have at least 1 I2C peripheral controller built in to the silicon.
 
-If you would like to learn more about the I2C protocol, I recommend this tutorial from SparkFun (https://learn.sparkfun.com/tutorials/i2c/all).
+If you would like to learn more about the I2C protocol, this tutorial from SparkFun is recommended (https://learn.sparkfun.com/tutorials/i2c/all).
 
 By looking at the STTS751 datasheet (https://www.st.com/resource/en/datasheet/stts751.pdf), we can determine that retrieving temperature data from the temperature register would require a set of I2C write/read commands as follows in the code section.
 
