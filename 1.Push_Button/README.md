@@ -17,9 +17,12 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 3. Make changes in main.c file. Use HAL library fuctions.
 ![HAL_Function_LED_Blink](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/0.Blink-LED/Images/101.png)
 
-        //CODE FOR LED BLINK
-        HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_5); /*Toggle Pin PA5 for LED2*/ 
-        HAL_Delay (500);/*Add some delay*/
+        //CODE FOR PUSH BUTTON
+       if(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13)==GPIO_PIN_RESET) //Reading Input Button PA13
+	  {
+		  HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5); //Toggle LED when input is reset
+		  HAL_Delay(300); // Add some delay
+	  }
 
 4. Complete code given in directory Core>Src>main.c
 
@@ -27,7 +30,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
 6. Run the project
 
-7. Output: LED2 blink after every 500 ms
+7. Output: LED2 will be toggled when button PA13 will be pressed
 
 Refer video: https://www.youtube.com/watch?v=hyZS2p1tW-g
  
