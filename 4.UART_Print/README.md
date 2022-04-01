@@ -18,6 +18,10 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 ![HAL_Function_LED_Blink](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/0.Blink-LED/Images/101.png)
 
         //CODE FOR LED BLINK
+        /* USER CODE BEGIN Includes */
+        #include <string.h>
+        /* USER CODE END Includes */
+        
         while (1)
         {
         //User code for printing message to UART terminal
