@@ -10,7 +10,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
 ## Tips for Running
 
-1. Configure NUCLEO-L476RG Board as in folder LED_Blinky.ioc
+1. Configure NUCLEO-L476RG Board as in folder I2C.ioc
 
 2. Save the project
 
