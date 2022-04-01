@@ -21,6 +21,10 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 
         //CODE FOR PRINTING ELASPED TIME
         
+        /* USER CODE BEGIN Includes */
+        #include <stdio.h>
+        /* USER CODE END Includes */
+        
         /* USER CODE BEGIN 1 */
         char uart_buf[50];
         int uart_buf_len;
