@@ -22,7 +22,7 @@ Or https://www.st.com/en/development-tools/stm32cubeide.html
 To download serial terminal PuTTY, Visit the official PuTTY download site with the following web browser.
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-## My First Experments
+## My First Experiment
 To Blink LED on NUCLEO-L476RG through STM32CubeIDE
 
 ## List of Experiments
