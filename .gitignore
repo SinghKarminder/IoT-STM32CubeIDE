@@ -1,0 +1,9 @@
+.settings/
+Debug/
+Drivers/
+.cproject/
+.mxproject/
+.project/
+Push_Button Debug.lauch/
+STM32L476RGTX_FLASH.ld/
+STM32L476RGTX_RAM.ld/
