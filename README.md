@@ -24,6 +24,8 @@ User manual STM32CubeIDE- https://www.st.com/resource/en/user_manual/dm00629856-
 
 Schematic official document NUCLEO_L476RG- https://www.st.com/en/evaluation-tools/nucleo-l476rg.html#cad-resources
 
+User manual for NUCLEO-L476RG- https://www.st.com/en/evaluation-tools/nucleo-l476rg.html#documentation
+
 Visit the official PuTTY download site with the following web browser.
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
