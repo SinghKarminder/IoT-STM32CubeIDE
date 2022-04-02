@@ -1,4 +1,5 @@
 .settings/
+<<<<<<< HEAD
 Core/
 Debug/
 Drivers/
@@ -8,3 +9,13 @@ Images/
 .project
 STM32L476RGTX_Flash.ld
 STM32L476RGTX_RAM.ld
+=======
+Debug/
+Drivers/
+.cproject/
+Images/
+.mxproject/
+.project/
+STM32L476RGTX_Flash.ld/
+STM32L476RGTX_RAM.ld/
+>>>>>>> 6353aa173d2f13edd1763eb14859a22b9b44ada0
