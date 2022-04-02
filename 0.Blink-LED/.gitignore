@@ -1,10 +1,10 @@
-.settings\
-.Debug\
-.Drivers\
-.cproject\
-.Images\
-.mxproject\
-.project\
-LED_Blinky Debug.launch\
-STM32L476RGTX_Flash.ld\
-STM32L476RGTX_RAM.ld\
+.settings/
+Debug/
+Drivers/
+.cproject/
+Images/
+.mxproject/
+.project/
+LED_Blinky Debug.launch/
+STM32L476RGTX_Flash.ld/
+STM32L476RGTX_RAM.ld/
