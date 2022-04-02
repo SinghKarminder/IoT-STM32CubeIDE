@@ -93,4 +93,7 @@ https://www.st.com/resource/en/user_manual/dm00629856-stm32cubeide-user-guide-st
 7. Output: Temperature in Celsius being displayed on serial terminal
 
 Refer video: https://www.youtube.com/watch?v=isOekyygpR8
+
+official documentation: The STTS751 datasheet is available at
+https://www.st.com/content/st_com/en/products/mems-and-sensors/temperature-sensors/stts751.html
  
