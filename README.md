@@ -12,7 +12,7 @@ STM32CubeIDE is a development environment for STM32 32-bit devices that use the 
 
 ### Hardware Requirement
 The following hardware requirements apply: 
-2 GB of RAM minimum
+2 GB of RAM minimum and 
 4 GB of RAM recommended 
 
 ## Product Installer
