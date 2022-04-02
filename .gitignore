@@ -1,1 +1,1 @@
-git rm --cached .settings
+git rm --cached *Core
