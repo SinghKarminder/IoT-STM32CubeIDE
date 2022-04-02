@@ -1,7 +1,9 @@
-.settingsDebug
-*Drivers
+.settings/
+Core/
+Debug/
+Drivers/
 .cproject
-Images
+Images/
 .mxproject
 .project
 STM32L476RGTX_Flash.ld
