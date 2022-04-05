@@ -2,7 +2,7 @@
 STM32CubeIDE is an all-in-one multi-OS development tool, and is part of the STM32Cube software ecosystem. It contains an
 advanced C/C++ development platform supporting software development of STM32-based products. The following figure shows the various areas of STM32CubeIDE Window.
 
-![STM32CubeID_Window](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/Images/103.png)
+![STM32CubeID_Window](https://github.com/SinghKarminder/IoT-STM32CubeIDE/blob/main/0.Blink-LED/Images/111.png)
 
 ## System Requirements
 Note: Only 64-bit versions of the operating system are supported.
